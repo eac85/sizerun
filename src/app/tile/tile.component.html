@@ -1,0 +1,12 @@
+<div class="tile">
+  <div class="x-corner">
+    <a (click)="replenItem(itemId)">X </a>
+  </div>
+  <div class="icon-corner">
+   <img [src]="iconMapping[itemType]" alt="Icon">
+  </div>
+  <div class="info"> 
+    <h3>{{ title }}</h3> <p>{{ description }}</p>
+     <p>{{ colorCode }}</p> 
+  </div>
+</div>

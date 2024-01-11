@@ -1,0 +1,40 @@
+<!-- tile-modal.component.html -->
+<h2>Add {{ itemType }}</h2>
+<form [formGroup]="itemForm" (ngSubmit)="submitForm()">
+  <label for="description">Description:</label>
+  <input type="text" formControlName="description" required>
+  <br>
+
+  <label for="styleCode">Style Code:</label>
+  <input type="text" formControlName="styleCode" required>
+  <br>
+
+  <label for="colorCode">Color Code:</label>
+  <input type="text" formControlName="colorCode" required>
+  <label for="sizeXS">Size XS:</label>
+  <input type="number" formControlName="sizeXS" required>
+
+  <label for="sizeS">Size S:</label>
+  <input type="number" formControlName="sizeS" required>
+
+  <label for="sizeM">Size M:</label>
+  <input type="number" formControlName="sizeM" required>
+
+  <label for="sizeL">Size L:</label>
+  <input type="number" formControlName="sizeL" required>
+
+  <label for="sizeXL">Size XL:</label>
+  <input type="number" formControlName="sizeXL" required>
+
+  <button type="submit">Add Item</button>
+</form>
+<div *ngIf="itemType === 'shirt'">
+
+</div>
+<div *ngIf="itemType === 'bottoms'">
+
+</div>
+
+<div>
+  <!--<button (click)="addTile()">Add {{ itemType }}</button> -->
+</div>

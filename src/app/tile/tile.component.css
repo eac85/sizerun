@@ -1,0 +1,28 @@
+.tile {
+        position: relative;
+        border: 1px solid #ddd;
+        margin: 10px;
+}
+
+
+.icon-corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.x-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+img {
+        height: 30px;
+        padding: 10px;
+}
+
+.info {
+  padding-top: 5px;
+  padding-left: 50px;
+}

@@ -1,0 +1,11 @@
+<div class="button-container">
+  <button (click)="addTile('shirt')"> Add Shirt + </button>
+  <button (click)="addTile('bottoms')"> Add Bottoms + </button>
+  <button (click)="addTile('denim')"> Add Denim + </button>
+  <button (click)="addTile('accessory')"> Add Accessory + </button>
+</div>
+
+<div>
+  <app-tile *ngFor="let tile of tiles" [title]="tile.title" [description]="tile.description"
+  [colorCode]="tile.colorCode" [itemType]="tile.itemType" [itemId]="tile.itemId"></app-tile>
+</div>

@@ -1,0 +1,10 @@
+.button-container {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  margin-bottom: 10px; /* Add some space at the bottom for a better look */
+}
+
+button {
+  margin-right: 10px; /* Adjust as needed */
+  white-space: nowrap; /* Prevent button text from wrapping */
+}

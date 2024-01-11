@@ -1,0 +1,59 @@
+/* nav-bar.component.css */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: whitesmoke; /* Adjust the background color as needed */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; /* Adjust the z-index to make sure it's on top of other elements */
+}
+
+.logo a {
+  color: black; /* Adjust the text color as needed */
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: black; /* Adjust the text color as needed */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile span {
+  margin-right: 10px;
+  color: black; /* Adjust the text color as needed */
+}
+
+.user-profile button {
+  background-color: whitesmoke; /* Adjust the button background color as needed */
+  color: black; /* Adjust the button text color as needed */
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-emoji {
+  font-family: 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'Apple Color Emoji', 'EmojiOne Color';
+}

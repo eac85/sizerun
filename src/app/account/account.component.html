@@ -1,0 +1,22 @@
+<div *ngIf="profile.username === null">
+  <form [formGroup]="updateProfileForm" (ngSubmit)="updateProfile()" class="form-widget">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" type="text" [value]="session.user.email" disabled />
+    </div>
+
+    <div class="form-group">
+      <label for="username">Name</label>
+      <input formControlName="username" id="username" type="text" />
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="button primary block" [disabled]="loading">
+        {{ loading ? 'Updating...' : 'Update' }}
+      </button>
+    </div>
+  </form>
+</div>
+
+<app-navbar [session]="session">  </app-navbar>
+<app-landing> </app-landing>
